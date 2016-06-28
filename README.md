@@ -1,2 +1,2 @@
 # Demo
-[fantasyq.github.io](fantasyq.github.io)
+[fantasyq.github.io](https://fantasyq.github.io/)
