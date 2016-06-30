@@ -32,6 +32,9 @@ header {
     height: 200px;
     text-align: center;
     text-shadow: 1px 1px 0 #fff;
+    @media screen and (max-width: 443px) {
+        height: 240px;
+    }
     h1 {
         color: rgb(247, 167, 115);
         font-size: 60px;
