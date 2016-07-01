@@ -95,6 +95,20 @@ header h4 {
   transition: .5s;
 }
 
+@media screen and (max-width: 768px) {
+  .box {
+    width: 50%;
+    transition: .5s;
+  }
+}
+
+@media screen and (max-width: 443px) {
+  .box {
+    width: 100%;
+    transition: .5s;
+  }
+}
+
 .box:before {
   content: "";
   height: 100%;
@@ -110,9 +124,20 @@ header h4 {
 .box .box_text {
   width: 100%;
   height: auto;
+  padding-left: 7px;
+  padding-right: 7px;
   font-size: 16px;
   color: #fff;
   font-family: 'Work Sans', sans-serif;
   vertical-align: middle;
   display: inline-block;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 443px) {
+  .box .box_text {
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
