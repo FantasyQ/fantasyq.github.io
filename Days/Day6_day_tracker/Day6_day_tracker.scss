@@ -59,8 +59,9 @@ nav {
         position: relative;
         width: 80%;
         height: auto;
-        color: #fff;
+        color: #f6a445;
         font-size: 30px;
+        font-family: 'Inconsolata', monospace;
         text-align: center;
     }
     .weekBox_day {
@@ -71,6 +72,7 @@ nav {
         font-size: 20px;
         line-height: 40px;
         color: rgb(251, 240, 216);
+        font-family: 'Inconsolata', monospace;
         display: inline-block;
         background-color: #f0c592;
         box-shadow: 0px 0px 1px #eee;
@@ -87,6 +89,7 @@ nav {
         font-size: 16px;
         line-height: 50px;
         color: #f6a445;
+        font-family: 'Inconsolata', monospace;
         // background-color: #f6f6f6;
         border-radius: 10px;
     }

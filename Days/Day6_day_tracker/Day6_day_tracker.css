@@ -72,8 +72,9 @@ nav a {
   position: relative;
   width: 80%;
   height: auto;
-  color: #fff;
+  color: #f6a445;
   font-size: 30px;
+  font-family: 'Inconsolata', monospace;
   text-align: center;
 }
 
@@ -85,6 +86,7 @@ nav a {
   font-size: 20px;
   line-height: 40px;
   color: #fbf0d8;
+  font-family: 'Inconsolata', monospace;
   display: inline-block;
   background-color: #f0c592;
   box-shadow: 0px 0px 1px #eee;
@@ -102,5 +104,6 @@ nav a {
   font-size: 16px;
   line-height: 50px;
   color: #f6a445;
+  font-family: 'Inconsolata', monospace;
   border-radius: 10px;
 }
