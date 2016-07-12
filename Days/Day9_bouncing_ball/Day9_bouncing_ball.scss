@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+::selection {
+    background-color: rgba(249, 112, 0, 0);
+}
+.wrapper {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-image: linear-gradient( 180deg, #fbf5ba 80%, transparent 0);
+    z-index: 1;
+    box-sizing: border-box;
+}
+nav {
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    transition: .5s;
+    z-index: 5;
+    &:hover {
+        transition: .5s;
+        background-color:  hsla(0, 0%, 65%, 0.15);
+    }
+    a {
+        font-size: 18px;
+        line-height: 20px;
+        font-family: 'Open Sans', sans-serif;
+        color: #ffa011;
+        // text-shadow: 1px 1px 0 #fff;
+    }
+}
+.content {
+    width: 80%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    .textBox {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        position: relative;
+        h1 {
+            left: 0;
+            position: relative;
+            padding: 150px 0px 50px 0px;
+            color: #ffa011;
+            font-size: 28px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        h2 {
+            font-size: 20px;
+            color: #777;
+            font-family: 'Inconsolata', monospace;
+        }
+        .resetLevel {
+            width: 200px;
+            height: 40px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+            display: inline-block;
+            font-size: 30px;
+            line-height: 40px;
+            color: #fafafa;
+            font-family: 'Inconsolata', monospace;
+            background-color: #ff8888;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .5s;
+            display: none;
+            &:hover {
+                background-color: #f47171;
+                transition: .5s;
+            }
+        }
+    }
+    .ballBox {
+        width: 50%;
+        padding-top: 50px;
+        float: left;
+        box-sizing: border-box;
+        position: relative;
+        .ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: #ff8888;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: relative;
+            animation: bounce 12s infinite;
+            -webkit-animation: bounce 12s infinite;
+            -moz-animation: bounce 12s infinite;
+        }
+        .messageBox {
+            top: 250px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+            display: inline-block;
+            .message {
+                font-size: 20px;
+                color: #ff8888;
+                font-family: 'Inconsolata', monospace;
+            }
+        }
+    }
+}
+
+// animation keyframes
+
+@keyframes bounce {
+0%   {margin-top: 0px; animation-timing-function: ease-in;}
+11.99%  {width: 100px; height: 100px;}
+12%  {margin-top: 410px; width: 110px; height: 90px; animation-timing-function: ease-out;}
+13.99%  {width: 100px; height: 100px;}
+25%  {margin-top: 0px; animation-timing-function: ease-in;}
+36.99%  {width: 100px; height: 100px;}
+37%  {margin-top: 410px; width: 110px; height: 90px; animation-timing-function: ease-out;}
+38.99%  {width: 100px; height: 100px;}
+49%  {margin-top: 0px; animation-timing-function: ease-in;}
+60.99%  {width: 100px; height: 100px;}
+61%  {margin-top: 410px; width: 110px; height: 90px; animation-timing-function: ease-out;}
+62.99%  {width: 100px; height: 100px;}
+75%  {margin-top: 0px; animation-timing-function: ease-in;}
+86.99%  {width: 100px; height: 100px;}
+87%  {margin-top: 410px; width: 110px; height: 90px; animation-timing-function: ease-out;}
+88.99%  {width: 100px; height: 100px;}
+100% {margin-top: 0px; animation-timing-function: ease-in;}
+}
+
+@-webkit-keyframes bounce {
+0%   {margin-top: 0px; -webkit-animation-timing-function: ease-in;}
+11.99%  {width: 100px; height: 100px;}
+12%  {margin-top: 410px; width: 110px; height: 90px; -webkit-animation-timing-function: ease-out;}
+13.99%  {width: 100px; height: 100px;}
+25%  {margin-top: 0px; -webkit-animation-timing-function: ease-in;}
+36.99%  {width: 100px; height: 100px;}
+37%  {margin-top: 410px; width: 110px; height: 90px; -webkit-animation-timing-function: ease-out;}
+38.99%  {width: 100px; height: 100px;}
+49%  {margin-top: 0px; -webkit-animation-timing-function: ease-in;}
+60.99%  {width: 100px; height: 100px;}
+61%  {margin-top: 410px; width: 110px; height: 90px; -webkit-animation-timing-function: ease-out;}
+62.99%  {width: 100px; height: 100px;}
+75%  {margin-top: 0px; -webkit-animation-timing-function: ease-in;}
+86.99%  {width: 100px; height: 100px;}
+87%  {margin-top: 410px; width: 110px; height: 90px; -webkit-animation-timing-function: ease-out;}
+88.99%  {width: 100px; height: 100px;}
+100% {margin-top: 0px; -webkit-animation-timing-function: ease-in;}
+}
+
+@-moz-keyframes bounce {
+0%   {margin-top: 0px; -moz-animation-timing-function: ease-in;}
+11.99%  {width: 100px; height: 100px;}
+12%  {margin-top: 410px; width: 110px; height: 90px; -moz-animation-timing-function: ease-out;}
+13.99%  {width: 100px; height: 100px;}
+25%  {margin-top: 0px; -moz-animation-timing-function: ease-in;}
+36.99%  {width: 100px; height: 100px;}
+37%  {margin-top: 410px; width: 110px; height: 90px; -moz-animation-timing-function: ease-out;}
+38.99%  {width: 100px; height: 100px;}
+49%  {margin-top: 0px; -moz-animation-timing-function: ease-in;}
+60.99%  {width: 100px; height: 100px;}
+61%  {margin-top: 410px; width: 110px; height: 90px; -moz-animation-timing-function: ease-out;}
+62.99%  {width: 100px; height: 100px;}
+75%  {margin-top: 0px; -moz-animation-timing-function: ease-in;}
+86.99%  {width: 100px; height: 100px;}
+87%  {margin-top: 410px; width: 110px; height: 90px; -moz-animation-timing-function: ease-out;}
+88.99%  {width: 100px; height: 100px;}
+100% {margin-top: 0px; -moz-animation-timing-function: ease-in;}
+}
