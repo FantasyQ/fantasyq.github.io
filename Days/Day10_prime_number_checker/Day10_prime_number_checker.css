@@ -14,11 +14,11 @@ a {
 }
 
 ::-moz-selection {
-  background-color: rgba(249, 112, 0, 0);
+  background-color: #f97000;
 }
 
 ::selection {
-  background-color: rgba(249, 112, 0, 0);
+  background-color: #f97000;
 }
 
 .wrapper {
@@ -90,7 +90,7 @@ nav a:hover {
 }
 
 .content .inputArea .inputAreaText {
-  width: 100%;
+  width: 90%;
   height: 40px;
   outline: none;
   background: none;
