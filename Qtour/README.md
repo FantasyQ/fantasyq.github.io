@@ -1,6 +1,6 @@
 ## 網站 Demo
 
-[http://tinyurl.com/MartinChuQtour](http://tinyurl.com/MartinChuQtour)
+[http://fantasyq.github.io/Qtour](http://fantasyq.github.io/Qtour)
 <br>
 
 ## 這是什麼專案？
@@ -24,4 +24,4 @@
 - [https://unsplash.com/](https://unsplash.com/)
 - [http://tw.freeimages.com/](http://tw.freeimages.com/)
 - [https://pixabay.com/](https://pixabay.com/)
-- 朱柏翰
+- 個人拍攝
