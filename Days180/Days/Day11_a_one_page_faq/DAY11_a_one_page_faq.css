@@ -18,11 +18,11 @@ h1, h2 {
 }
 
 ::-moz-selection {
-  background-color: #f97000;
+  background-color: #f97001;
 }
 
 ::selection {
-  background-color: #f97000;
+  background-color: #f97001;
 }
 
 .wrapper {
