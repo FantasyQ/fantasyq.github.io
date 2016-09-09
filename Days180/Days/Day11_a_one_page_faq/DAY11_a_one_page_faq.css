@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+::-moz-selection {
+  background-color: #f97000;
+}
+
+::selection {
+  background-color: #f97000;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fafafa;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100px;
+  height: 20px;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  transition: .5s;
+  z-index: 5;
+}
+
+nav:hover {
+  transition: .5s;
+  background-color: rgba(255, 255, 255, 0.55);
+}
+
+nav a {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(215, 50, 85, 0.66);
+}
+
+nav a:hover {
+  color: #f64f6e;
+}
+
+.content {
+  width: 80%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: relative;
+}
+
+.content h1 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.content .faq {
+  padding-bottom: 30px;
+}
+
+.content .faq h2 {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.content .faq i {
+  color: #777;
+}
+
+.content .reference {
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  position: fixed;
+}
+
+.content .reference p {
+  text-align: center;
+}
