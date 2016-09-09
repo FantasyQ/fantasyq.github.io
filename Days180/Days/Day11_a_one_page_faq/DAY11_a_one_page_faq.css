@@ -85,6 +85,11 @@ nav a:hover {
 
 .content .faq h2 {
   font-size: 1.2em;
+  cursor: pointer;
+}
+
+.content .faq i {
+  color: #777;
 }
 
 .content .reference {
