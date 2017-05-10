@@ -100,7 +100,7 @@ header {
   position: absolute; }
 
 .workExperience {
-  padding-bottom: 10px; }
+  padding-bottom: 20px; }
 
 .projectRow {
   padding: 0 70px;
@@ -166,6 +166,8 @@ footer {
     text-align: center; }
   .content {
     padding: 0 10px; }
+  .workExperience {
+    padding-bottom: 10px; }
   .projectRow {
     padding: 0; }
     .projectRow .image {
