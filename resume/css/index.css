@@ -31,11 +31,11 @@ p {
 .wrapper {
   min-height: 100%;
   background-color: #f5f5fa;
-  color: #333; }
+  color: #333;
+  padding-bottom: 50px; }
 
 .main_container {
   width: 975px;
-  height: 4000px;
   margin: 0 auto;
   box-sizing: border-box; }
 
@@ -92,17 +92,24 @@ header {
   margin: auto;
   position: absolute; }
 
+.workExperience {
+  padding-bottom: 10px; }
+
 .projectRow {
   padding: 0 70px;
-  margin: 50px 0 70px; }
+  margin: 50px 0 20px; }
+  .projectRow:not(:last-child) {
+    margin-bottom: 70px; }
   .projectRow .image {
     width: 45%;
     float: left; }
     .projectRow .image img {
-      width: 100%; }
+      max-width: 100%;
+      box-shadow: 0 2px 4px 0 #aaa; }
   .projectRow .text {
     width: 55%;
     text-align: left;
+    padding-top: 5px;
     padding-left: 40px;
     box-sizing: border-box;
     float: left; }
@@ -114,6 +121,11 @@ header {
       line-height: 1.6em;
       color: #333;
       margin-bottom: 20px; }
+
+.intro p {
+  line-height: 1.6em;
+  text-align: left;
+  padding: 0 70px; }
 
 .margin_bot_40 {
   margin-bottom: 40px; }
