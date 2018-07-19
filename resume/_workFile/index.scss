@@ -84,10 +84,13 @@ header {
     box-shadow: 0 1px 3px #ddd;
     margin-top: 30px;
     text-align: center;
+    h2 {
+        margin-bottom: 50px;
+    }
 }
 .contentBox {
     text-align: center;
-    padding: 50px 0;
+    padding: 70px 70px;
     position: relative;
 }
 .myInfo {
@@ -96,8 +99,21 @@ header {
     }
 }
 .jobHistory {
-    h3:not(:last-child) {
+    text-align: left;
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        font-weight: bold;
         margin-bottom: 18px;
+        &:not(:first-child) {
+            margin-top: 60px;
+        }
+    }
+    p {
+        font-size: 1.8em;
+        margin-bottom: 18px;
+        line-height: 1.6em;
     }
 }
 .decoLine {
@@ -117,9 +133,11 @@ header {
 }
 .workExperience {
     padding-bottom: 20px;
+    h2 {
+        margin-bottom: 60px;
+    }
 }
 .projectRow {
-    padding: 0 70px;
     margin: 50px 0 20px;
     &:not(:last-child) {
         margin-bottom: 70px;
@@ -141,7 +159,7 @@ header {
         box-sizing: border-box;
         float: left;
         h3 {
-            font-weight: 600;
+            font-weight: bold;
             margin-bottom: 30px;
             display: block;
         }
@@ -172,9 +190,6 @@ footer {
 }
 // footer End
 
-.contentBox h3.margin_bot_50 {
-    margin-bottom: 50px;
-}
 .clearFix::after {
     content: "";
     display: block;
@@ -208,6 +223,9 @@ footer {
     // content
     .content {
         padding: 0 10px;
+        .contentBox {
+            padding: 70px 20px;
+        }
     }
     .workExperience {
         padding-bottom: 10px;

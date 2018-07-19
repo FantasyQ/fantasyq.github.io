@@ -24,6 +24,8 @@ a {
   text-decoration: none; }
   a:hover {
     color: #5fb4ff;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s; }
 
 p {
@@ -38,6 +40,7 @@ p {
 .main_container {
   width: 975px;
   margin: 0 auto;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 header {
@@ -52,6 +55,7 @@ header {
       height: 152px;
       border-radius: 50%;
       border: 3px solid #fff;
+      -webkit-box-shadow: 0 0 3px #ccc;
       box-shadow: 0 0 3px #ccc;
       background-image: url("../img/myPhoto.jpg");
       background-repeat: no-repeat;
@@ -71,20 +75,34 @@ header {
 .content {
   border-radius: 5px;
   background-color: #fafafa;
+  -webkit-box-shadow: 0 1px 3px #ddd;
   box-shadow: 0 1px 3px #ddd;
   margin-top: 30px;
   text-align: center; }
+  .content h2 {
+    margin-bottom: 50px; }
 
 .contentBox {
   text-align: center;
-  padding: 50px 0;
+  padding: 70px 70px;
   position: relative; }
 
 .myInfo h3:not(:last-child) {
   margin-bottom: 20px; }
 
-.jobHistory h3:not(:last-child) {
-  margin-bottom: 18px; }
+.jobHistory {
+  text-align: left; }
+  .jobHistory h2 {
+    text-align: center; }
+  .jobHistory h3 {
+    font-weight: bold;
+    margin-bottom: 18px; }
+    .jobHistory h3:not(:first-child) {
+      margin-top: 60px; }
+  .jobHistory p {
+    font-size: 1.8em;
+    margin-bottom: 18px;
+    line-height: 1.6em; }
 
 .decoLine::after {
   content: "";
@@ -101,9 +119,10 @@ header {
 
 .workExperience {
   padding-bottom: 20px; }
+  .workExperience h2 {
+    margin-bottom: 60px; }
 
 .projectRow {
-  padding: 0 70px;
   margin: 50px 0 20px; }
   .projectRow:not(:last-child) {
     margin-bottom: 70px; }
@@ -112,6 +131,7 @@ header {
     float: left; }
     .projectRow .image img {
       max-width: 100%;
+      -webkit-box-shadow: 0 2px 4px 0 #aaa;
       box-shadow: 0 2px 4px 0 #aaa; }
   .projectRow .text {
     width: 55%;
@@ -119,10 +139,11 @@ header {
     padding-top: 5px;
     padding-left: 40px;
     word-wrap: break-word;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     float: left; }
     .projectRow .text h3 {
-      font-weight: 600;
+      font-weight: bold;
       margin-bottom: 30px;
       display: block; }
     .projectRow .text p {
@@ -142,9 +163,6 @@ footer {
   footer p {
     font-size: 1.4em;
     text-shadow: 1px 1px 0 #fff; }
-
-.contentBox h3.margin_bot_50 {
-  margin-bottom: 50px; }
 
 .clearFix::after {
   content: "";
@@ -166,6 +184,8 @@ footer {
     text-align: center; }
   .content {
     padding: 0 10px; }
+    .content .contentBox {
+      padding: 70px 20px; }
   .workExperience {
     padding-bottom: 10px; }
   .projectRow {
